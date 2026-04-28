@@ -660,7 +660,7 @@ summary {
   right: calc(1rem + env(safe-area-inset-right));
   bottom: calc(1rem + env(safe-area-inset-bottom));
   z-index: 25;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 3.6rem;
