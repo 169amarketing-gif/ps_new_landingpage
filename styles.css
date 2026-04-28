@@ -806,3 +806,46 @@ summary {
     contain-intrinsic-size: auto 500px;
   }
 }
+
+/* ─── Mobile image fixes (< 1024px) ─── */
+@media (max-width: 1023px) {
+
+  /* Hero image — full bleed, nampak lebih impactful */
+  .hero-media {
+    margin: 0 calc(-1rem);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .hero-media img {
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* Split layout images (ps_gbp.webp & bob.webp) — full bleed */
+  .split-layout .media-card {
+    margin: 0 calc(-1rem);
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .split-layout .media-card img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* Reduce gap between image and copy on mobile */
+  .split-layout {
+    gap: 0;
+  }
+
+  .split-layout .split-copy {
+    padding-top: 2rem;
+  }
+}

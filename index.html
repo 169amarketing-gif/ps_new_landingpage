@@ -175,14 +175,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </section>
 
       <!-- SECTION C: TRUST BAR -->
-      <section class="trust-bar">
-        <div class="shell trust-grid">
-          <p>12+ Years of Experience</p>
-          <p>50,000+ iPhones Repaired</p>
-          <p>30-Day Warranty</p>
-          <p>Klang Valley Coverage</p>
-        </div>
-      </section>
+      <head>
+  ...
+  <style>
+    /* trust bar styles */
+    .tb-wrap { ... }
+    .tb-card { ... }
+    .tb-icon { ... }
+    .tb-num { ... }
+    .tb-label { ... }
+  </style>
+</head>
+
+<body>
+  ...
+  <section class="trust-bar">
+    <div class="shell trust-grid">
+      <div class="tb-wrap">
+        <!-- 4 cards -->
+      </div>
+    </div>
+  </section>
+  ...
+</body>
 
       <!-- SECTION D: HOW IT WORKS -->
       <section class="section" id="how-it-works">
@@ -371,16 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
           <div class="testimonials-grid">
             <article class="testimonial-card reveal">
-              <div class="testimonial-head">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='100' fill='%23dff4f3'/%3E%3Ccircle cx='100' cy='82' r='36' fill='%2319b5ae' opacity='.24'/%3E%3Crect x='48' y='124' width='104' height='38' rx='19' fill='%231d1d1f' opacity='.09'/%3E%3Ctext x='100' y='188' fill='%236e6e73' font-size='16' font-family='Arial, sans-serif' text-anchor='middle'%3EAvatar%3C/text%3E%3C/svg%3E"
-                  alt="Placeholder for customer avatar"
-                  data-image-slot="testimonial-1"
-                  data-replace-src="placeholder-customer-1.jpg"
-                />
-                <div>
+              <div>
                   <strong>Aida R.</strong>
                   <span>Bangsar</span>
                 </div>
@@ -392,16 +398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </article>
 
             <article class="testimonial-card reveal">
-              <div class="testimonial-head">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='100' fill='%23dff4f3'/%3E%3Ccircle cx='100' cy='82' r='36' fill='%2319b5ae' opacity='.24'/%3E%3Crect x='48' y='124' width='104' height='38' rx='19' fill='%231d1d1f' opacity='.09'/%3E%3Ctext x='100' y='188' fill='%236e6e73' font-size='16' font-family='Arial, sans-serif' text-anchor='middle'%3EAvatar%3C/text%3E%3C/svg%3E"
-                  alt="Placeholder for customer avatar"
-                  data-image-slot="testimonial-2"
-                  data-replace-src="placeholder-customer-2.jpg"
-                />
-                <div>
+              <div>
                   <strong>Elina J.</strong>
                   <span>Shah Alam</span>
                 </div>
@@ -413,15 +410,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </article>
 
             <article class="testimonial-card reveal">
-              <div class="testimonial-head">
-                <img
-                  loading="lazy"
-                  decoding="async"
-                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='100' fill='%23dff4f3'/%3E%3Ccircle cx='100' cy='82' r='36' fill='%2319b5ae' opacity='.24'/%3E%3Crect x='48' y='124' width='104' height='38' rx='19' fill='%231d1d1f' opacity='.09'/%3E%3Ctext x='100' y='188' fill='%236e6e73' font-size='16' font-family='Arial, sans-serif' text-anchor='middle'%3EAvatar%3C/text%3E%3C/svg%3E"
-                  alt="Placeholder for customer avatar"
-                  data-image-slot="testimonial-3"
-                  data-replace-src="placeholder-customer-3.jpg"
-                />
                 <div>
                   <strong>Mira W.</strong>
                   <span>Cheras</span>
@@ -511,8 +499,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <summary>How do I know this is legitimate?</summary>
               <p>
                 Fair question. Identity, business registration, and payment details can be shared
-                before arrival. Replace the launch version of this answer with your final SSM number
-                and review links.
+                before arrival.
               </p>
             </details>
             <details class="faq-item reveal">
