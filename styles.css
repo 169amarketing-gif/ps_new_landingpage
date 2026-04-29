@@ -837,7 +837,7 @@ summary {
   .split-layout .media-card img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    object-position: center 20%;
+    object-position: center 5%;
   }
 
   /* Reduce gap between image and copy on mobile */
