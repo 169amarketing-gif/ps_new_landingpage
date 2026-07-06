@@ -2,6 +2,22 @@
 <html lang="en-MY">
   <head>
     <!-- Google tag (gtag.js) -->
+     <!-- Event snippet for Book appointment conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18070382528/vlPQCOHL15ocEMDP0KhD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18070382528"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -596,4 +612,3 @@
     </script>
   </body>
 </html>
-
